@@ -53,6 +53,7 @@ $(".nav__close").click(() => {
   $(".nav__inner").removeClass("nav__inner-active");
   document.body.classList.remove("_lock__scroll");
 });
+
 function Resize() {
   if ($(window).width() > 992) {
     $("#nav__image").addClass("_rotating");
@@ -64,8 +65,7 @@ function Resize() {
     document.body.classList.remove("_lock__scroll");
   } else {
     $("#nav__image").removeClass("_rotating");
-    $("#nav__image").addClass("nav__image-rotate");
-    $("#nav__popup").addClass("_slide__open");
+    $("#nav__popup").addClass("_slide__close");
   }
 }
 
