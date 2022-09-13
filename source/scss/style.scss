@@ -386,7 +386,7 @@ header{
       font-size: 14px;
       line-height: 17px;
       padding-top: 9px;
-      height: 51px;
+      min-height: 51px;
    }
    .price{
       font-size: 18px;
@@ -675,13 +675,6 @@ footer{
 ._lock__scroll{
    overflow: hidden;
 }
-._slide__close{
-   height: auto;
-   overflow: none;
-}
-._slide__open{
-   height: auto;
-}
 @media screen and (max-width: 992px){
    .nav__content{
       ul{
@@ -704,12 +697,12 @@ footer{
       transform: rotate(180deg);
    }
    ._slide__close{
-      height: 0;
+      max-height: 0;
       overflow: hidden;
-      transition-property: height;
+      transition-property: max-height;
    }
    ._slide__open{
-      height: 141px;
+      max-height: 141px;
    }
    .header__burger{
       display: flex;
